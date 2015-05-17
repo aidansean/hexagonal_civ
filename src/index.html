@@ -1,0 +1,40 @@
+<html>
+<head>
+<title>Hexagon game</title>
+<link type="text/css" rel="stylesheet" media="all" href="style.css" />
+<script type="text/ecmascript" src="helper.js"></script>
+<script type="text/ecmascript" src="controls.js"></script>
+<script type="text/ecmascript" src="settings.js"></script>
+<script type="text/ecmascript" src="hexagons.js"></script>
+<script type="text/ecmascript" src="coordinates.js"></script>
+<script type="text/ecmascript" src="conflict.js"></script>
+<script type="text/ecmascript" src="movement.js"></script>
+<script type="text/ecmascript" src="units.js"></script>
+<script type="text/ecmascript" src="city.js"></script>
+<script type="text/ecmascript" src="draw.js"></script>
+<script type="text/ecmascript" src="main.js"></script>
+<script type="text/javascript">
+
+function start(){
+  canvas  = document.getElementById('game_board') ;
+  context = canvas.getContext('2d') ;
+  canvas.addEventListener('mousedown', map_mouseDown, false) ;
+  canvas.addEventListener('mouseup'  , map_mouseUp  , false) ;
+  document.getElementsByTagName('body')[0].addEventListener('keydown', keyDown    , false) ;
+
+  place_units() ;
+  draw_all() ;
+  heartbeat() ;
+  cities[1].make_DOM() ;
+}
+</script>
+</head>
+<body onload="start()">
+<p onclick="next_turn()">End turn</p>
+<div style="padding:30px">
+<canvas id="game_board" width="800" height="650" oncontextmenu="return false;"></canvas>
+<div id="city_view">
+<h2>London</h2>
+</div>
+</div>
+</body>

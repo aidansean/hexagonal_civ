@@ -1,0 +1,37 @@
+canvas#game_board{
+  width  : 800px ;
+  height : 650px ;
+  border-right  : 1px solid black ;
+  border-bottom : 1px solid black ;
+  margin : 0px ;
+}
+body{
+ padding : 20px ;
+ margin : 0px ;
+}
+div#city_view{
+  border : 2px solid red ;
+  width : 786px ;
+  height : 650px ;
+  padding : 5px ;
+}
+div#city_view h2{
+  width : 100% ;
+  text-align : center ;
+  color : white ;
+  background : red ;
+  margin : 0px ;
+}
+td.city_currency{
+  font-family : courier, monospace ;
+  color : red ;
+}
+
+table{
+  border : 1px solid red ;
+  float : left ;
+}
+canvas#crewe_canvas{
+  border : 5px solid purple ;
+  float : right ;
+}
