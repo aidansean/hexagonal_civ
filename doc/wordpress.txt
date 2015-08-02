@@ -2,7 +2,7 @@ Ever since I played Sid Meier's original <a href="http://en.wikipedia.org/wiki/C
 
 <h3>Links</h3>
 
-<a href="http://www.aidansean.com/guess_the_song/">Live page</a>
+<a href="http://www.aidansean.com/hexagonal_civ/">Live page</a>
 <a href="https://github.com/aidansean/hexagonal_civ">GitHub repository</a>
 
 <h3>Overview</h3>
